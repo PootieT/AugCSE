@@ -9,14 +9,14 @@ representations than language-model based augmentations, which can be expensive 
 
 In this repo, you will find 
 - 100+ natural language augmentations (from NL-Augmenter)
-- Training [script](./train.py) for AugCSE with different options(see [training arguments]()):
-  - loss variations (triplet, ranking (SimCSE), contrastive, etc)
-  - projection layer variations (linear, mixture of experts)
-  - discriminator variations (binary, predict label, predict order)
-  - positive, negative, or neutral augmentations
-  - augmentation automatic labeling and sampling variations
-  - supervised vs. unsupervised objective
-  - single sentence vs. pair sentence classification
+- Training [script](./train.py) for AugCSE with different options(see [training arguments](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L64)):
+  - loss variations (triplet, ranking (SimCSE), contrastive, etc) [link](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L126)
+  - projection layer variations (linear, mixture of experts) [link](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L104)
+  - discriminator variations (binary, predict label, predict order) [link](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L171)
+  - positive, negative, or neutral augmentations [link](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L265)
+  - augmentation automatic labeling and sampling variations [link](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L296)
+  - supervised vs. unsupervised objective [link](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L127)
+  - single sentence vs. pair sentence classification [link](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L216)
 - Evaluation [script](./evaluate_sentence_embedding.py) for STS and SentEval (adapted from SimCSE)
 - Various experimentation and analysis [scripts](./analysis)
 
