@@ -69,7 +69,6 @@ Then, run evaluation script:
 For best hyperparameters, please refer to paper Appendix A.7 for detail.
 
 
-The repo is adapted from [NL-Augmenter](https://github.com/GEM-benchmark/NL-Augmenter) and [SimCSE](https://github.com/princeton-nlp/SimCSE)
 
 ## Future Studies:
 
@@ -92,3 +91,4 @@ To cite our paper, please use:
 
 ```
 
+The repo is adapted from [NL-Augmenter](https://github.com/GEM-benchmark/NL-Augmenter) and [SimCSE](https://github.com/princeton-nlp/SimCSE)
