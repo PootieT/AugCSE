@@ -1,0 +1,41 @@
+{
+  "type": "punctuation",
+  "test_cases": [
+    {
+      "class": "PunctuationWithRules",
+      "inputs": {
+        "sentence": "if you are feeling good then go to school otherwise take rest at home"
+      },
+      "outputs": [{
+        "sentence": "If you are feeling good, then go to school, otherwise take rest at home."
+      }]
+    },
+    {
+      "class": "PunctuationWithRules",
+      "inputs": {
+        "sentence": "hello sam how are you"
+      },
+      "outputs": [{
+        "sentence": "Hello Sam, how are you?"
+      }]
+    },
+    {
+      "class": "PunctuationWithRules",
+      "inputs": {
+        "sentence": "alex buy me a pizza i will help you to complete your homework"
+      },
+      "outputs": [{
+        "sentence": "Alex, buy me a pizza, I will help you to complete your homework."
+      }]
+    },
+    {
+      "class": "PunctuationWithRules",
+      "inputs": {
+        "sentence": "hey sam how are you doing please invite alex on your wedding"
+      },
+      "outputs": [{
+        "sentence": "Hey Sam, how are you doing please invite Alex on your wedding?"
+      }]
+    }
+  ]
+}
