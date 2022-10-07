@@ -119,7 +119,7 @@ dataset with N datapoints. Once all augmentations are created (N X A, where A is
 We go through each datapoints 1:N, and at each index, we pick an augmentation, and combine all samples into another 
 cached dataset. This is where `resample_augmentation_per_epoch` or `regenerate_augmentation_per_epoch` comes into play.
 But ideally, you generate augmentations once, and you are done (because some, especially langauge model based 
-augmentations) are very expensive to run. Now, here are a couple of args related to augmentation generations:
+augmentations are very expensive to run). Now, here are a couple of args related to augmentation generations:
 
 | Arg                         | Type               | Descriptions                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
