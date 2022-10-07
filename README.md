@@ -42,7 +42,8 @@ AugCSE/dump/{AUGMENTATION}/wiki1m_for_simcse_train_100.csv
 
 
 ## Train
-mention this is our model loss, if you want to use new augs, what would you do
+
+### Train AugCSE 
 To reproduce our results (for STS) with AugCSE framework, run the following training [script](./experiments/run_train_exp.py):
 ```commandline
 ./experiments/run_train_exp.py
@@ -59,7 +60,7 @@ The main arguments are explained as follows (for more detailed explanation, see 
 | uniform_augmentation_sampling | boolean                                                                                                         | At every datapoint index, whether to select uniformly from one of the augmentations specified. It has to be false for using positives and negatives (in second example training script)                                                                                                                                                                                                               |
 | remove_no_augmentations       | boolean                                                                                                         | Each augmentation has a perturbation rate. It may not be applicable for every sentence. Therefore, this argument dictates whether we throw away datapoints that are not augmented.                                                                                                                                                                                                                    |
 
-
+### Train SimCSE with negatives 
 In the second example [training script](./experiments/run_train_pos_neg_simcse.sh), you can train a model with positive 
 augmentation as original sentence (SimCSE objective) and RandomDeletion as negative augmentation. Or, switch it with 
 whatever augmentation you want! This is the script we used to obtain results in the motivational case studies experiments
