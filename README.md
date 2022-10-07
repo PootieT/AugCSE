@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ## Data
 
-Original as well as augmentation data for wiki1m can be downloaded. Read more [here]((./data/README_2.md))
+Original as well as augmentation data for wiki1m can be downloaded. Read more [here](./data/README_2.md)
 For augmented data, once downloaded, the folder of the zip file (unzipped) should be placed at the root of the project
 for training script to work property:
 ```commandline
@@ -42,16 +42,27 @@ AugCSE/dump/{AUGMENTATION}/wiki1m_for_simcse_train_100.csv
 
 
 ## Train
-For example training run files (for reproducing our STS-B result), run:
+mention this is our model loss, if you want to use new augs, what would you do
+To reproduce our results (for STS) with AugCSE framework, run the following training [script](./experiments/run_train_exp.py):
 ```commandline
 ./experiments/run_train_exp.py
 ```
+
+The main arguments are explained as follows (for more detailed explanation, see actual [arguments](https://github.com/PootieT/AugCSE/blob/39c7ee902c635b189528cf3f860e42e66a4a8078/train.py#L64)):
+```commandline
+--model_name_or_paths "bert-base-uncased"   # this allows you to switch to any backbone 
+                                            # models supported in huggingface.
+```
+
 
 To train a model with positive augmentation as original sentence (SimCSE objective) and RandomDeletion
 as negative augmentation, try:
 ```commandline
 ./experiments/run_train_pos_neg_simcse.py
 ```
+
+### mention how user can change augmentation names, create custom augmentations, as well as using multiples
+also easy to swap model name, add the argument difference examples, what they want, and how they can do it
 
 ## Evaluate
 For example evaluation on STS or SentEval, first download SentEval dataset
