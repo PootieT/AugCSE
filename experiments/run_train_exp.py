@@ -8,11 +8,11 @@ from train import ModelArguments, DataTrainingArguments, OurTrainingArguments, m
 # Detailed hyperparameter settings, please refer to paper appendix A.7
 
 model_args = ModelArguments(
-    model_name_or_path="bert-base-uncased",  # "roberta-base",
+    model_name_or_path="bert-base-uncased",  # "roberta-base", or any other model supported by huggingface
     pooler_type="cls",
     projection_layers=100,  # a short-cut for predefined 2 layer mlp projection layer
     supervised_augmentation_loss=False,
-    contrastive_loss_type="ranking",
+    contrastive_loss_type="ranking",         # follows SBERT loss naming convention
     discriminate=True,
     discriminator_weight=0.005,
     gradient_reverse_multiplier=1.0,

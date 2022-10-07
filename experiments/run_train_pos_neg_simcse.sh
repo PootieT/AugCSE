@@ -12,10 +12,9 @@ python train.py\
         --dataset_name "/projectnb/llamagrp/peter/ContrastiveAugmentation/data/wiki1m_for_simcse.txt"\
         --positive_augmentations ""\
         --negative_augmentations "RandomDeletion"\
-        --augmentation_label_method lm_uniform\
         --regenerate_augmentation_per_epoch false\
         --max_seq_length 32\
-        --uniform_augmentation_sampling $UNIFORM\
+        --uniform_augmentation_sampling false\
         --remove_no_augmentations true\
         --output_dir dump\
         --overwrite_output_dir\
@@ -37,4 +36,4 @@ python train.py\
         --logging_steps 500\
         --fp16\
         --save_strategy epoch\
-        --hyper_path_modifier $MOD
+        --hyper_path_modifier debug
