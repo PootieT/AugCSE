@@ -225,11 +225,19 @@ shoot us an email! We are excited to hear how our repo can be made useful for yo
 
 To cite our paper, please use:
 ```
-@article{Tang2022AugCSE,
-  title={AugCSE: Contrastive Sentence Embedding with Diverse Augmentation},
-  author={Tang, Zilu and Kocyigit, Muhammed Yusuf and Wijaya, Derry},
-  journal={link coming},
-  year={2022}
+@inproceedings{tang-etal-2022-augcse,
+    title = "{A}ug{CSE}: Contrastive Sentence Embedding with Diverse Augmentations",
+    author = "Tang, Zilu  and
+      Kocyigit, Muhammed Yusuf  and
+      Wijaya, Derry Tanti",
+    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = nov,
+    year = "2022",
+    address = "Online only",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.aacl-main.30",
+    pages = "375--398",
+    abstract = "Data augmentation techniques have been proven useful in many applications in NLP fields. Most augmentations are task-specific, and cannot be used as a general-purpose tool. In our work, we present AugCSE, a unified framework to utilize diverse sets of data augmentations to achieve a better, general-purpose, sentence embedding model. Building upon the latest sentence embedding models, our approach uses a simple antagonistic discriminator that differentiates the augmentation types. With the finetuning objective borrowed from domain adaptation, we show that diverse augmentations, which often lead to conflicting contrastive signals, can be tamed to produce a better and more robust sentence representation. Our methods achieve state-of-the-art results on downstream transfer tasks and perform competitively on semantic textual similarity tasks, using only unsupervised data.",
 }
 
 ```
