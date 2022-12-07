@@ -1,6 +1,6 @@
 # AugCSE: Contrastive Sentence Embedding with Diverse Augmentation
 
-This is the repo for paper `AugCSE: Contrastive Sentence Embedding with Diverse Augmentation` - AACL 2022 ([Link](https://arxiv.org/abs/2210.13749)).
+This is the repo for paper `AugCSE: Contrastive Sentence Embedding with Diverse Augmentation` - AACL 2022 ([Link](https://aclanthology.org/2022.aacl-main.30.pdf)).
 We used a diverse set of natural language augmentation and a discriminator loss to improve general sentence embedding 
 representation (in English). We show that simple rule-based augmentations can be just as effective at improving sentence
 representations than language-model based augmentations, which can be expensive and biased.
